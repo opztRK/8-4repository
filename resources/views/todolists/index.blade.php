@@ -4,7 +4,7 @@
     <div class="col-8 offset-2">
         <div class="card">
             <div class="card-header">
-                Todo　一覧テスト
+                Todo　一覧
             </div>
             <div class="card-body">
                 @if(session('status'))
