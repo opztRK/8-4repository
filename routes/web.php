@@ -20,9 +20,10 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/index','PlayersController@index');
 //Todolist用
 Route::get('', 'TodolistController@index');
-Route::get('/create', 'TodolistController@create');
-Route::post('', 'TodolistController@store');
-Route::get('/{id}', 'TodolistController@show');
-Route::get('/{id}/edit', 'TodolistController@edit');
-Route::put('/{id}', 'TodolistController@update');
-Route::delete('/{id}', 'TodolistController@destroy');
+Route::get('todolist', 'TodolistController@index');
+Route::get('todolist/create', 'TodolistController@create');
+Route::post('todolist', 'TodolistController@store');
+Route::get('todolist/{id}', 'TodolistController@show');
+Route::get('todolist/{id}/edit', 'TodolistController@edit');
+Route::put('todolist/{id}', 'TodolistController@update');
+Route::delete('todolist/{id}', 'TodolistController@destroy');
